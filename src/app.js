@@ -10,13 +10,6 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 const store = configureStore();
-
-const expenseOne = store.dispatch(addExpense({ description: 'Water bill', amount: 100, createdAt: 1000 }));
-const expenseTwo = store.dispatch(addExpense({ description: 'Gas Bill', amount: 150, createdAt: -1000 }));
-const expenseThree = store.dispatch(addExpense({ description: 'Coffee', amount: 80, createdAt: 1800 }));
-const expenseFour = store.dispatch(addExpense({ description: 'Video games', amount: 50, createdAt: 3000 }));
-const expenseFive = store.dispatch(addExpense({ description: 'Restaurants and dining', amount: 1500, createdAt: 150 }));
-
 const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
 console.log(visibleExpenses);
