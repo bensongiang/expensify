@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  background: white;
+}
+
+.error {
+  color: $brand-color-coral;
+  font-style: italic;
+  padding: $m-size;
+  background: lighten($brand-color-coral, 10%);
+  border: 1px solid $brand-color-coral;
+}
+
+.container {
+  padding: $m-size;
+}

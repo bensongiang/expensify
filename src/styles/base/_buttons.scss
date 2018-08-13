@@ -1,0 +1,19 @@
+button {
+  padding: $m-size;
+  border: none;
+  cursor: pointer;
+}
+
+.button-link {
+  color: $brand-color-coral;
+}
+
+.button-primary {
+  background-color: $brand-color-bright-blue;
+  border-radius: $border-radius-sm;
+  color: white;
+
+  &:hover {
+    background-color: darken($brand-color-bright-blue, 10%);
+  }
+}

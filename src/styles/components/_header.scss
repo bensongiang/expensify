@@ -1,0 +1,46 @@
+.header {
+  background: $brand-color-dark-blue;
+  padding: $m-size;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+
+  .header-logo {
+    flex-grow: 1;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .active {
+    color: $brand-color-coral;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .header {
+    flex-direction: row;
+  }
+
+  .navigation {
+    width: auto;
+
+    a {
+      padding-left: $xxl-size;
+    }
+  }
+}
