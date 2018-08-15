@@ -6,6 +6,7 @@ import configureStore from './store/configureStore';
 import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
+import './firebase/firebase';
 
 const store = configureStore();
 const state = store.getState();
