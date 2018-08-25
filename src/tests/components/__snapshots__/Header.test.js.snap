@@ -7,7 +7,7 @@ exports[`Should render Header correctly 1`] = `
   <Link
     className="header-logo"
     replace={false}
-    to="/"
+    to="/dashboard"
   >
     <h1>
       Expensify
@@ -19,8 +19,7 @@ exports[`Should render Header correctly 1`] = `
     <NavLink
       activeClassName="active"
       aria-current="page"
-      exact={true}
-      to="/"
+      to="/dashboard"
     >
       Dashboard
     </NavLink>
@@ -31,6 +30,11 @@ exports[`Should render Header correctly 1`] = `
     >
       Add
     </NavLink>
+    <button
+      onClick={[Function]}
+    >
+      Logout
+    </button>
   </div>
 </header>
 `;
